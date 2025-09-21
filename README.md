@@ -1,57 +1,57 @@
 # CodErator
 
-查询元数据，暴力封装元数据信息，暴力生成源码，能生成就是好工具，反正都要按需求改！
+Query metadata, violently encapsulate metadata information, violently generate source code—if it can generate, it's a good tool! You'll end up modifying it to fit your needs anyway!
 
-## 环境与依赖
+## Environment & Dependencies
 
-* 项目创建于Visual Studio 2017
+* Project created in Visual Studio 2017
 
-* .Net Framework 4.5.2
+* .NET Framework 4.5.2
 
-* WinForm
+* WinForms
 
-* “难用”的要死的[Razor Engine 3.9.3](https://github.com/Antaris/RazorEngine)
+* The "painfully hard to use" [Razor Engine 3.9.3](https://github.com/Antaris/RazorEngine)
 
 * MySQL Connector.Net 6.9
 
-## 使用目标
+## Usage Goals
 
 ### JavaEE
 
-* SSM框架代码生成
+* SSM framework code generation
 
-* 可自由选择需要生成的层面
+* Freely select which layers to generate
 
 ### CSharp
 
-* 生成Entity
+* Generate Entities
 
-## 支持功能
+## Supported Features
 
-* 连接到指定schema，尚未支持不指定schema的连接
+* Connect to a specified schema (currently does not support connecting without specifying a schema)
 
-* 表字段内容获取
+* Retrieve table field information
 
-* 列表多选即可选择需要生成的表
+* Multi-select tables from a list to choose which ones to generate
 
-* 指定输出位置
+* Specify output location
 
-## 开发路线
+## Development Roadmap
 
-* 项目初始版本属于XP模型产物，根据开发过程遇到的问题，可能需要在代码框架、逻辑设计上重新进行分析。
+* The initial version of the project is a product of the XP model, and may require re-analysis of the code framework and logic design as issues are encountered during development.
 
-* 初始版本对模板的支持比较严格，不建议用户修改模板文件。然而这不是废话吗？并不，我鼓励各位根据自己的需求或者代码风格去修改模板文件，只要遵守现有的文件名以及Razor Engine语法即可。
+* The initial version has strict support for templates; users are not encouraged to modify template files. However, this may sound like nonsense, but it's not: I actually encourage you to modify the template files according to your own needs or coding style, as long as you follow the existing file naming conventions and Razor Engine syntax.
 
-* 未来考虑对模板支持进行大的修改，做到支持程序猿自己定义的模板。这个修改只要确保程序猿们遵守了Razor Engine语法，就可以生成代码，不受模板文件名的影响。
+* In the future, I plan to make major improvements to template support, so that developers can define their own templates. This only requires developers to follow Razor Engine syntax; code can be generated regardless of the template file name.
 
-* 上述开发路线说明或许会因为懒癌发作延期，作为开源项目，如果各位愿意的话，倒不是不可以去修改。欢迎fork，不求star。
+* The above roadmap may be delayed due to procrastination, but as an open-source project, you are welcome to make modifications if you wish. Feel free to fork; I'm not asking for a star.
 
-## 现存问题
+## Existing Issues
 
-* 模板文件是定死的，包括文件名（前缀后缀）、文件数量
+* Template files are fixed, including file names (prefixes and suffixes) and number of files
 
-* 仅支持三层生成（Entity、Dao、Service）
+* Only supports three-layer generation (Entity, Dao, Service)
 
-* C#暂时只支持Entity，其余两层因为本人没有接触过ASP.Net MVC所以不太能下手
+* C# currently only supports Entity; the other two layers are not yet supported because I haven't worked with ASP.Net MVC
 
-* 一些藏得比较深的bug
+* Some deeply hidden bugs
